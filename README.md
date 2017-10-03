@@ -22,7 +22,7 @@ pod 'AZEasyAnchors'
 
 ## Author
 
-andzuz, andrzej.zuzak@miquido.com
+andzuz, andrz.zuzak@gmail.com
 
 ## License
 

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04B91D1E1F8414ED00F05DFD /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B91D1D1F8414ED00F05DFD /* UIView+Constraints.swift */; };
 		059EE230D35E2E05C4AEC127C5DB0B09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		0E39FEE0ED44C6209719B964B5D32DCD /* Pods-AZEasyAnchors_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE76FC704C74C4E221D3121AFA90A8F7 /* Pods-AZEasyAnchors_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F89E6CA4F0F9B2E0047F6C58D3FB64B /* AZEasyAnchors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70B307E05C75DBDCA0D02F5CDC7108B7 /* AZEasyAnchors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33DC161E42450AFFE774D349A02CDE36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		4BA8E4484FD2422CEA33BD13654B0807 /* Pods-AZEasyAnchors_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB024E64F6FBB07A6B41E5C253B31230 /* Pods-AZEasyAnchors_Tests-dummy.m */; };
 		CC8A472FB6D739B2D85557554BF7961F /* AZEasyAnchors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B319163BB5B6397E1D2E5A005FA979AE /* AZEasyAnchors-dummy.m */; };
-		E15822B19FF743219C28E84D99D5D645 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78845AB502884832A706233F821EED /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,18 +27,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04B91D1D1F8414ED00F05DFD /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		203276E7ACF59DEFD0151B9DDF8653A8 /* Pods-AZEasyAnchors_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AZEasyAnchors_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2A253C6BC723F1356A41122FDB7BA41F /* Pods-AZEasyAnchors_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AZEasyAnchors_Tests-resources.sh"; sourceTree = "<group>"; };
-		4B78845AB502884832A706233F821EED /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AZEasyAnchors/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		4BFC4A816FC15D7B0C3683DE795949C7 /* AZEasyAnchors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZEasyAnchors-prefix.pch"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		70B307E05C75DBDCA0D02F5CDC7108B7 /* AZEasyAnchors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZEasyAnchors-umbrella.h"; sourceTree = "<group>"; };
 		8041CE71C68F38D0FA51B14D82D6C298 /* AZEasyAnchors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AZEasyAnchors.xcconfig; sourceTree = "<group>"; };
-		80BA2594CE3282A352E0FD3797CA51B8 /* AZEasyAnchors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AZEasyAnchors.modulemap; sourceTree = "<group>"; };
-		82BD79644BA077DC1586C7C39FD9BD0D /* AZEasyAnchors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AZEasyAnchors.framework; path = AZEasyAnchors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		80BA2594CE3282A352E0FD3797CA51B8 /* AZEasyAnchors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AZEasyAnchors.modulemap; sourceTree = "<group>"; };
+		82BD79644BA077DC1586C7C39FD9BD0D /* AZEasyAnchors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AZEasyAnchors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A04B86D57EB091E8AB98D54C88287FE9 /* Pods-AZEasyAnchors_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AZEasyAnchors_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AAB9CC70C347F9F61591EF32E97DEDD5 /* Pods-AZEasyAnchors_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AZEasyAnchors_Tests.modulemap"; sourceTree = "<group>"; };
+		AAB9CC70C347F9F61591EF32E97DEDD5 /* Pods-AZEasyAnchors_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AZEasyAnchors_Tests.modulemap"; sourceTree = "<group>"; };
 		AE76FC704C74C4E221D3121AFA90A8F7 /* Pods-AZEasyAnchors_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AZEasyAnchors_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B319163BB5B6397E1D2E5A005FA979AE /* AZEasyAnchors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AZEasyAnchors-dummy.m"; sourceTree = "<group>"; };
 		B43FCA2CB1779868E619EF800657C5D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		E95B12C279C62BD618B4E2243D2B923D /* Pods-AZEasyAnchors_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AZEasyAnchors_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E9E736AF09515311A79941E076229A34 /* Pods-AZEasyAnchors_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AZEasyAnchors_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		FB024E64F6FBB07A6B41E5C253B31230 /* Pods-AZEasyAnchors_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AZEasyAnchors_Tests-dummy.m"; sourceTree = "<group>"; };
-		FB5C3001C11CE8BC312F87A27F4D1178 /* Pods_AZEasyAnchors_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AZEasyAnchors_Tests.framework; path = "Pods-AZEasyAnchors_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5C3001C11CE8BC312F87A27F4D1178 /* Pods_AZEasyAnchors_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AZEasyAnchors_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +157,7 @@
 		DF2BBEE66E167A6F1088D68A30609DEF /* AZEasyAnchors */ = {
 			isa = PBXGroup;
 			children = (
-				4B78845AB502884832A706233F821EED /* ReplaceMe.swift */,
+				04B91D1D1F8414ED00F05DFD /* UIView+Constraints.swift */,
 				9C1715AB0DE56AF89D032811A62B5401 /* Support Files */,
 			);
 			name = AZEasyAnchors;
@@ -253,8 +253,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B91D1E1F8414ED00F05DFD /* UIView+Constraints.swift in Sources */,
 				CC8A472FB6D739B2D85557554BF7961F /* AZEasyAnchors-dummy.m in Sources */,
-				E15822B19FF743219C28E84D99D5D645 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
