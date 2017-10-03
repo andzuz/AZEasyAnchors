@@ -22,7 +22,7 @@ pod 'AZEasyAnchors'
 
 ## Author
 
-andzuz, andrz.zuzak@gmail.com
+Andrzej Zuzak, andrz.zuzak@gmail.com
 
 ## Usage 
 
