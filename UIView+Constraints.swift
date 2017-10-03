@@ -1,6 +1,6 @@
 import UIKit
 
-enum ConstraintType {
+public enum ConstraintType {
     case top
     case trailing
     case leading
@@ -11,13 +11,13 @@ enum ConstraintType {
     case centerY
 }
 
-extension UIView {
+public extension UIView {
     
-    func fillView(view: UIView) -> [ConstraintType: NSLayoutConstraint] {
+    public func fillView(view: UIView) -> [ConstraintType: NSLayoutConstraint] {
         return position(top: view.topAnchor, trailing: view.trailingAnchor, bottom: view.bottomAnchor, leading: view.leadingAnchor)
     }
     
-    func position(top: NSLayoutYAxisAnchor? = nil, topConstant: CGFloat = 0, trailing: NSLayoutXAxisAnchor? = nil, trailingConstant: CGFloat = 0, bottom: NSLayoutYAxisAnchor? = nil, bottomConstant: CGFloat = 0, leading: NSLayoutXAxisAnchor? = nil, leadingConstant: CGFloat = 0) -> [ConstraintType: NSLayoutConstraint] {
+    public func position(top: NSLayoutYAxisAnchor? = nil, topConstant: CGFloat = 0, trailing: NSLayoutXAxisAnchor? = nil, trailingConstant: CGFloat = 0, bottom: NSLayoutYAxisAnchor? = nil, bottomConstant: CGFloat = 0, leading: NSLayoutXAxisAnchor? = nil, leadingConstant: CGFloat = 0) -> [ConstraintType: NSLayoutConstraint] {
         translatesAutoresizingMaskIntoConstraints = false
         var constraints: [ConstraintType: NSLayoutConstraint] = [:]
         
@@ -48,7 +48,7 @@ extension UIView {
         return constraints
     }
     
-    func size(heightConstant: CGFloat? = nil, widthConstant: CGFloat? = nil) -> [ConstraintType: NSLayoutConstraint] {
+    public func size(heightConstant: CGFloat? = nil, widthConstant: CGFloat? = nil) -> [ConstraintType: NSLayoutConstraint] {
         translatesAutoresizingMaskIntoConstraints = false
         var constraints: [ConstraintType: NSLayoutConstraint] = [:]
         
@@ -67,7 +67,7 @@ extension UIView {
         return constraints
     }
     
-    func sizeRelative(heightTo: UIView? = nil, heightMultiplier: CGFloat = 0, widthTo: UIView? = nil, widthMultiplier: CGFloat = 0) -> [ConstraintType: NSLayoutConstraint] {
+    public func sizeRelative(heightTo: UIView? = nil, heightMultiplier: CGFloat = 0, widthTo: UIView? = nil, widthMultiplier: CGFloat = 0) -> [ConstraintType: NSLayoutConstraint] {
         translatesAutoresizingMaskIntoConstraints = false
         var constraints: [ConstraintType: NSLayoutConstraint] = [:]
         
@@ -86,7 +86,7 @@ extension UIView {
         return constraints
     }
     
-    func centerX(toView: UIView? = nil) -> [ConstraintType: NSLayoutConstraint] {
+    public func centerX(toView: UIView? = nil) -> [ConstraintType: NSLayoutConstraint] {
         translatesAutoresizingMaskIntoConstraints = false
         var constraints: [ConstraintType: NSLayoutConstraint] = [:]
         
@@ -99,7 +99,7 @@ extension UIView {
         return constraints
     }
     
-    func centerY(toView: UIView? = nil) -> [ConstraintType: NSLayoutConstraint] {
+    public func centerY(toView: UIView? = nil) -> [ConstraintType: NSLayoutConstraint] {
         translatesAutoresizingMaskIntoConstraints = false
         var constraints: [ConstraintType: NSLayoutConstraint] = [:]
         
@@ -112,7 +112,7 @@ extension UIView {
         return constraints
     }
     
-    func center(toView: UIView? = nil) -> [ConstraintType: NSLayoutConstraint]? {
+    public func center(toView: UIView? = nil) -> [ConstraintType: NSLayoutConstraint]? {
         if let toView = toView {
             let centerXConstraints = centerX(toView: toView)
             let centerYConstraints = centerY(toView: toView)

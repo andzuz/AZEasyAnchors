@@ -12,12 +12,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1280CEE86AEEA8E581D370F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1280CEE86AEEA8E581D370F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* AZEasyAnchors_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AZEasyAnchors_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		626F5558EDFC4E66053703AE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		80717ECD6277989664A3BF73 /* AZEasyAnchors.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AZEasyAnchors.podspec; path = ../AZEasyAnchors.podspec; sourceTree = "<group>"; };
+		626F5558EDFC4E66053703AE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		80717ECD6277989664A3BF73 /* AZEasyAnchors.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AZEasyAnchors.podspec; path = ../AZEasyAnchors.podspec; sourceTree = "<group>"; };
 		AC1D1973CD03A0E6DAC04DF7 /* Pods_AZEasyAnchors_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AZEasyAnchors_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D682F4CFE1775C5B843C9432 /* Pods-AZEasyAnchors_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZEasyAnchors_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AZEasyAnchors_Tests/Pods-AZEasyAnchors_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D9920ADAE3B42AF15265EC0D /* Pods-AZEasyAnchors_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AZEasyAnchors_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AZEasyAnchors_Tests/Pods-AZEasyAnchors_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,10 +131,6 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0820;
@@ -275,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -315,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AZEasyAnchors'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'This library provides extensions to create pain-free constraints using layout anchors.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ This library provides extensions to create pain-free constraints using layout an
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'AZEasyAnchors/**'
+  s.source_files = '*'
   
   # s.resource_bundles = {
   #   'AZEasyAnchors' => ['AZEasyAnchors/Assets/*.png']
