@@ -1,0 +1,6 @@
+use_frameworks!
+target 'AZEasyAnchors_Tests' do
+  pod 'AZEasyAnchors', :path => '../'
+  
+  
+end
