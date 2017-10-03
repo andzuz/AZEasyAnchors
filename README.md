@@ -46,7 +46,7 @@ Next, we want to animate our constraints. We do it in a very simple way:
 ```swift
 parentView.addSubview(childView)
 let constraints = childView.position(top: parentView.topAnchor, topConstant: 20)
-constraints[.top].constant += 10
+constraints[.top]?.constant += 10
 
 UIView.animateWithDuration(0.5) {
     self.view.layoutIfNeeded()
