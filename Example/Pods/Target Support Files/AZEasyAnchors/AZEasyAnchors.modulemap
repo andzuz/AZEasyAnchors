@@ -1,0 +1,6 @@
+framework module AZEasyAnchors {
+  umbrella header "AZEasyAnchors-umbrella.h"
+
+  export *
+  module * { export * }
+}
