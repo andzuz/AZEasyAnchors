@@ -24,6 +24,39 @@ pod 'AZEasyAnchors'
 
 andzuz, andrz.zuzak@gmail.com
 
+## Usage 
+
+### Quick start
+
+Firstly, we want to make ```childView``` fill it's ```parentView```:
+
+```swift
+parentView.addSubview(childView)
+childView.fillView(view: parentView)
+```
+
+Then, we want our ```childView``` to be 20pt from ```parentView``` top, 30pt from it's right, 0pt from it's left and for it to have height of 300:
+
+```swift
+parentView.addSubview(childView)
+childView.position(top: parentView.topAnchor, topConstant: 20,
+                   trailing: parentView.trailingAnchor, leading: parentView.leadingAnchor, 
+                   leadingConstant: 30)
+childView.size(heightConstant: 300)
+```
+
+Next, we want to animate our constraints. We do it in a very simple way:
+
+```swift
+parentView.addSubview(childView)
+let constraints = childView.position(top: parentView.topAnchor, topConstant: 20)
+constraints[.top].constant += 10
+
+UIView.animateWithDuration(0.5) {
+    self.view.layoutIfNeeded()
+}
+```
+
 ## License
 
 AZEasyAnchors is available under the MIT license. See the LICENSE file for more info.
