@@ -36,8 +36,8 @@ Then, we want our ```childView``` to be 20pt from ```parentView``` top, 30pt fro
 ```swift
 parentView.addSubview(childView)
 childView.position(top: parentView.topAnchor, topConstant: 20,
-                   trailing: parentView.trailingAnchor, leading: parentView.leadingAnchor, 
-                   leadingConstant: 30)
+                   trailing: parentView.trailingAnchor, trailingConstant: 30,
+                   leading: parentView.leadingAnchor)
 childView.size(heightConstant: 300)
 ```
 
