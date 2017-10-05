@@ -30,7 +30,7 @@ This library provides extensions to create pain-free constraints using layout an
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = '*'
+  s.source_files = 'Classes/**/*'
   
   # s.resource_bundles = {
   #   'AZEasyAnchors' => ['AZEasyAnchors/Assets/*.png']

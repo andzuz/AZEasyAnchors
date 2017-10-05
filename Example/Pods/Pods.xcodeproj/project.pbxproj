@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04B91D1E1F8414ED00F05DFD /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B91D1D1F8414ED00F05DFD /* UIView+Constraints.swift */; };
 		059EE230D35E2E05C4AEC127C5DB0B09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		0E39FEE0ED44C6209719B964B5D32DCD /* Pods-AZEasyAnchors_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE76FC704C74C4E221D3121AFA90A8F7 /* Pods-AZEasyAnchors_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F89E6CA4F0F9B2E0047F6C58D3FB64B /* AZEasyAnchors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70B307E05C75DBDCA0D02F5CDC7108B7 /* AZEasyAnchors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04B91D1D1F8414ED00F05DFD /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		04340D0E1F8699900069860A /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Classes; path = AZEasyAnchors/Classes; sourceTree = "<group>"; };
 		203276E7ACF59DEFD0151B9DDF8653A8 /* Pods-AZEasyAnchors_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AZEasyAnchors_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2A253C6BC723F1356A41122FDB7BA41F /* Pods-AZEasyAnchors_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AZEasyAnchors_Tests-resources.sh"; sourceTree = "<group>"; };
 		4BFC4A816FC15D7B0C3683DE795949C7 /* AZEasyAnchors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZEasyAnchors-prefix.pch"; sourceTree = "<group>"; };
@@ -157,7 +156,7 @@
 		DF2BBEE66E167A6F1088D68A30609DEF /* AZEasyAnchors */ = {
 			isa = PBXGroup;
 			children = (
-				04B91D1D1F8414ED00F05DFD /* UIView+Constraints.swift */,
+				04340D0E1F8699900069860A /* Classes */,
 				9C1715AB0DE56AF89D032811A62B5401 /* Support Files */,
 			);
 			name = AZEasyAnchors;
@@ -253,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B91D1E1F8414ED00F05DFD /* UIView+Constraints.swift in Sources */,
 				CC8A472FB6D739B2D85557554BF7961F /* AZEasyAnchors-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
