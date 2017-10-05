@@ -5,10 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/AZEasyAnchors.svg?style=flat)](http://cocoapods.org/pods/AZEasyAnchors)
 [![Platform](https://img.shields.io/cocoapods/p/AZEasyAnchors.svg?style=flat)](http://cocoapods.org/pods/AZEasyAnchors)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 
 ## Installation
@@ -22,7 +18,40 @@ pod 'AZEasyAnchors'
 
 ## Author
 
-andzuz, andrz.zuzak@gmail.com
+Andrzej Zuzak, andrz.zuzak@gmail.com
+
+## Usage 
+
+### Quick start
+
+Firstly, we want to make ```childView``` fill it's ```parentView```:
+
+```swift
+parentView.addSubview(childView)
+childView.fillView(view: parentView)
+```
+
+Then, we want our ```childView``` to be 20pt from ```parentView``` top, 30pt from it's right, 0pt from it's left and for it to have height of 300:
+
+```swift
+parentView.addSubview(childView)
+childView.position(top: parentView.topAnchor, topConstant: 20,
+                   trailing: parentView.trailingAnchor, trailingConstant: 30,
+                   leading: parentView.leadingAnchor)
+childView.size(heightConstant: 300)
+```
+
+Next, we want to animate our constraints. We do it in a very simple way:
+
+```swift
+parentView.addSubview(childView)
+let constraints = childView.position(top: parentView.topAnchor, topConstant: 20)
+constraints[.top]?.constant += 10
+
+UIView.animateWithDuration(0.5) {
+    self.view.layoutIfNeeded()
+}
+```
 
 ## License
 
