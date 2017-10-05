@@ -26,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04340D0E1F8699900069860A /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Classes; path = AZEasyAnchors/Classes; sourceTree = "<group>"; };
+		04340D0F1F86A4190069860A /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		203276E7ACF59DEFD0151B9DDF8653A8 /* Pods-AZEasyAnchors_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AZEasyAnchors_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2A253C6BC723F1356A41122FDB7BA41F /* Pods-AZEasyAnchors_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AZEasyAnchors_Tests-resources.sh"; sourceTree = "<group>"; };
 		4BFC4A816FC15D7B0C3683DE795949C7 /* AZEasyAnchors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZEasyAnchors-prefix.pch"; sourceTree = "<group>"; };
@@ -69,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04340D101F86A4210069860A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04340D0F1F86A4190069860A /* UIView+Constraints.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		0AE0833427884AB09E4C55D579E50178 /* Pods-AZEasyAnchors_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +164,7 @@
 		DF2BBEE66E167A6F1088D68A30609DEF /* AZEasyAnchors */ = {
 			isa = PBXGroup;
 			children = (
-				04340D0E1F8699900069860A /* Classes */,
+				04340D101F86A4210069860A /* Classes */,
 				9C1715AB0DE56AF89D032811A62B5401 /* Support Files */,
 			);
 			name = AZEasyAnchors;
