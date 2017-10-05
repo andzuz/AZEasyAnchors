@@ -13,7 +13,7 @@ public enum ConstraintType {
 
 public extension UIView {
     
-    public func fillView(view: UIView) -> [ConstraintType: NSLayoutConstraint] {
+    public func fillView(_ view: UIView) -> [ConstraintType: NSLayoutConstraint] {
         return position(top: view.topAnchor, trailing: view.trailingAnchor, bottom: view.bottomAnchor, leading: view.leadingAnchor)
     }
     
@@ -86,12 +86,12 @@ public extension UIView {
         return constraints
     }
     
-    public func centerX(toView: UIView? = nil) -> [ConstraintType: NSLayoutConstraint] {
+    public func centerXtoView(_ view: UIView? = nil) -> [ConstraintType: NSLayoutConstraint] {
         translatesAutoresizingMaskIntoConstraints = false
         var constraints: [ConstraintType: NSLayoutConstraint] = [:]
         
-        if let toView = toView {
-            let centerXConstraint = centerXAnchor.constraint(equalTo: toView.centerXAnchor)
+        if let view = view {
+            let centerXConstraint = centerXAnchor.constraint(equalTo: view.centerXAnchor)
             centerXConstraint.isActive = true
             constraints[.centerX] = centerXConstraint
         }
@@ -99,12 +99,12 @@ public extension UIView {
         return constraints
     }
     
-    public func centerY(toView: UIView? = nil) -> [ConstraintType: NSLayoutConstraint] {
+    public func centerYToView(_ view: UIView? = nil) -> [ConstraintType: NSLayoutConstraint] {
         translatesAutoresizingMaskIntoConstraints = false
         var constraints: [ConstraintType: NSLayoutConstraint] = [:]
         
-        if let toView = toView {
-            let centerYConstraint = centerYAnchor.constraint(equalTo: toView.centerYAnchor)
+        if let view = view {
+            let centerYConstraint = centerYAnchor.constraint(equalTo: view.centerYAnchor)
             centerYConstraint.isActive = true
             constraints[.centerY] = centerYConstraint
         }
@@ -112,10 +112,10 @@ public extension UIView {
         return constraints
     }
     
-    public func center(toView: UIView? = nil) -> [ConstraintType: NSLayoutConstraint]? {
-        if let toView = toView {
-            let centerXConstraints = centerX(toView: toView)
-            let centerYConstraints = centerY(toView: toView)
+    public func centerToView(_ view: UIView? = nil) -> [ConstraintType: NSLayoutConstraint]? {
+        if let view = view {
+            let centerXConstraints = centerXtoView(view)
+            let centerYConstraints = centerYToView(view)
             return centerXConstraints.merging(centerYConstraints) { (_, new) in new }
         }
         
