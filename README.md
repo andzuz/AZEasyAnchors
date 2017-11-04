@@ -52,6 +52,19 @@ UIView.animateWithDuration(0.5) {
     self.view.layoutIfNeeded()
 }
 ```
+### iPhone X
+
+This library supports iPhone X safe-area layout guides. Expression:
+
+```swift
+childView.fillView(view: self.view)
+```
+
+automatically applies safe-area layout constraints to top, bottom, but also leading and trailing constraint (last two are needed for landscape orientation to be displayed properly). If you don't want to use safe-area layout guides just include additional parameter in method call:
+
+```swift
+childView.fillView(view: self.view, useSafeArea: false)
+```
 
 ## License
 
