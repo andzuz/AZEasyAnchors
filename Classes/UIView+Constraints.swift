@@ -13,7 +13,14 @@ public enum ConstraintType {
 
 public extension UIView {
     
-    public func fillView(_ view: UIView) -> [ConstraintType: NSLayoutConstraint] {
+    public func fillView(_ view: UIView, useSafeArea: Bool = true) -> [ConstraintType: NSLayoutConstraint] {
+        if #available(iOS 11, *) {
+            if useSafeArea {
+                let guide = view.safeAreaLayoutGuide
+                return position(top: guide.topAnchor, trailing: guide.trailingAnchor, bottom: guide.bottomAnchor, leading: guide.leadingAnchor)
+            }
+        }
+        
         return position(top: view.topAnchor, trailing: view.trailingAnchor, bottom: view.bottomAnchor, leading: view.leadingAnchor)
     }
     
