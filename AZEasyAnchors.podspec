@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AZEasyAnchors'
-  s.version          = '0.5.1'
+  s.version          = '0.6'
   s.summary          = 'This library provides extensions to create pain-free constraints using layout anchors.'
 
 # This description is used to generate tags and improve search results.
